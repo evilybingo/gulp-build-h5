@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-install": "^1.1.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-rename": "^1.4.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "rename": "cp src/agreement/dist/share.html src/agreement/dist/share.ejs",
+    "server": "npm run build && npm run rename"
+  }
+}

@@ -1,0 +1,264 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+}
+
+.container .bodyContent {
+	position: relative;
+	overflow: hidden;
+	overflow-y: auto;
+}
+.container .bodyContent .img-desc{
+	position: fixed;
+	left:0;
+	right:0;
+	background-color: rgba(0,0,0,0.7);
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4rem;
+    z-index: 1000;
+}
+.container .bodyContent .img-desc img{
+	width: 10%;
+}
+.container .bodyContent .img-desc  .img-desc-word{
+	color: #fff;
+	margin-right: auto;
+	font-size: 1.2rem;
+	margin-left: .5rem;
+}
+.container .bodyContent .img-desc a:link,
+.container .bodyContent .img-desc a:visited,
+.container .bodyContent .img-desc a:hover
+{
+	text-decoration: none;
+	background-color: #fff;
+	color: #000;
+	padding: .5rem 1rem;
+	margin-right: .6rem;
+	border-radius: .2rem;
+}
+/* .container .bodyContent .img-station {} */
+
+.container .bodyContent .img-station img {
+	background-position: center;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+/*油站信息*/
+
+.container .bodyContent .oil-station {
+	margin: 3rem 1rem;
+	position: relative;
+}
+.container .bodyContent .oil-station .nav-station{
+	position: absolute;
+	top:-6rem;
+	right: 0;
+	width: 5rem;
+	height: 5rem;
+	background-color: #F68C02;
+	border-radius: 5rem;
+	box-shadow: 0rem 0.2rem 0.5rem #fdb558;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container .bodyContent .oil-station .nav-station a{
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bolder;
+}
+.container .bodyContent .oil-station .name-station {
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+
+.container .bodyContent .oil-station .cls-station {
+	color: darkslategray;
+	font-size: 1rem;
+	margin: 1.5rem 0;
+}
+
+/* .container .bodyContent .oil-station .name-station,
+.container .bodyContent .oil-station .time-Station{
+	margin: .6rem;
+	height: .8em;
+	display: flex;
+} */
+
+.container .bodyContent .oil-station .time-Station>span:last-child {
+	margin-left: .5rem;
+}
+.container .bodyContent .oil-station .time-Station span,
+.container .bodyContent .oil-station .desc-station span{
+	vertical-align: middle;
+} 
+.container .bodyContent .oil-station .time-Station img,
+.container .bodyContent .oil-station .desc-station img {
+	background-position: center;
+	width: 1rem;
+	height: auto;
+	margin-top: 0.1rem;
+	/*max-width: 100%;*/
+	max-height: 100%;
+	/*vertical-align: middle;*/
+}
+
+.container .bodyContent .cls-station .time-Station,
+.container .bodyContent .cls-station .desc-station
+{
+	display: flex;
+	margin-top: .5rem;
+	/*align-items: baseline;*/
+}
+
+.container .bodyContent .cls-station>div:last-child>span:last-child {
+	margin-left: .5rem;
+}
+
+.container .bodyContent .imgDiv {
+	margin: 1rem;
+	border-top: 1px solid #d6d6d6;
+	height: 3rem;
+	display: flex;
+	clear: both;
+}
+
+.container .bodyContent .imgDiv img {
+	background-position: center;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.container .bodyContent ul.todayPrice,
+.container .bodyContent ul.lbsDiv {
+	margin: 0 1rem;
+	list-style: none;
+	clear: both;
+}
+
+.container .bodyContent ul.todayPrice li {
+	overflow: hidden;
+	margin-bottom: 1rem;
+	display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+/*油价描述*/
+
+.container .bodyContent ul.todayPrice div.oil-list {
+	/*float: left;*/
+	width:50%;
+	display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.container .bodyContent ul.todayPrice div.oil-list>span:first-child {
+	vertical-align: middle;
+	font-size: 1.1rem;
+}
+
+
+/*降价幅度*/
+
+.container .bodyContent ul.todayPrice div.oil-list span.oil-discount {
+	border: 1px solid #F68C02;
+	color: #F68C02;
+	border-radius: .2rem;
+	display: flex;
+	font-size: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+.container .bodyContent ul.todayPrice div.oil-list span.oil-discount>span{
+	display:block;
+}
+
+.container .bodyContent ul.todayPrice div.oil-list span.oil-discount>span:first-child {
+	background-color: #F68C02;
+	color: #fff;
+	padding: 0 .2rem;
+}
+
+.container .bodyContent ul.todayPrice div.oil-list span.oil-discount>span:last-child {
+	padding-right: .2rem;
+}
+
+
+/*优惠价格比较*/
+
+/* .container .bodyContent ul.todayPrice div.price-discount {
+	float: right;
+} */
+.container .bodyContent ul.todayPrice div.price-discount>div:first-child>span:first-child {
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+.container .bodyContent ul.todayPrice div.price-discount>div:first-child>span:last-child {
+	color: #F68C02;
+}
+.container .bodyContent ul.todayPrice div.price-discount>div:first-child>span:last-child .pricezhaoyou {
+	font-size: 1.6rem;
+}
+
+.container .bodyContent ul.todayPrice div.price-discount>div:last-child {
+	color: darkgray;
+	font-size: 1rem;
+}
+
+.container .bodyContent ul.lbsDiv li {
+	margin-bottom: 1rem;
+}
+
+.container .bodyContent .lbsDiv .lbs {
+	border: 1px solid #f68c02;
+	color: #f68c02;
+	font-size: 1rem;
+	padding: 0 .2rem;
+	border-radius: .2rem;
+}
+
+.container .bodyContent .lbsDiv .lbsdec {
+	color: gray;
+	font-size: 1rem;
+	padding: .2rem;
+}
+
+.container .footerDiv {
+	position: absolute;
+	border-top: 1px solid #d6d6d6;
+	box-shadow: darkgrey 1rem 1rem 3rem .5rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.container .footerDiv .content a {
+	background-color: #363645;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 1.5rem;
+	margin: 1rem;
+	padding: 1rem 0;
+	text-decoration: none;
+	border-radius: .2rem;
+}
